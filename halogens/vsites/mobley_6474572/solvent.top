@@ -1,0 +1,178 @@
+[ defaults ]
+; nbfunc	comb-rule	gen-pairs	fudgeLJ	fudgeQQ
+     1	     2	yes   	0.500000	0.833333
+
+[ atomtypes ]
+;type, bondingtype, atomic_number, mass, charge, ptype, sigma, epsilon
+UNK_0      	     6	12.01078	0.0000000000000000	A    	0.3541565784164789	0.330404227402953
+UNK_1      	     6	12.01078	0.0000000000000000	A    	0.3541565784164789	0.330404227402953
+UNK_2      	    17	35.4532	0.0000000000000000	A    	0.3294396086028561	1.098767354154779
+UNK_3      	     1	1.007947	0.0000000000000000	A    	0.2514929809708763	0.05799646393836248
+UNK_4      	     1	1.007947	0.0000000000000000	A    	0.2514929809708763	0.05799646393836248
+UNK_5      	     1	1.007947	0.0000000000000000	A    	0.2422003509904593	0.005412340913390872
+UNK_6      	     0	0	0.0000000000000000	D    	0	0
+HOH_0      	     8	15.99943	0.0000000000000000	A    	0.31507	0.6363864000000001
+HOH_1      	     1	1.007947	0.0000000000000000	A    	0.09999999999999999	0
+HOH_2      	     1	1.007947	0.0000000000000000	A    	0.09999999999999999	0
+NA_0       	    11	22.989769282	0.0000000000000000	A    	0.2439280690268249	0.3658460312
+CL_0       	    17	35.4532	0.0000000000000000	A    	0.4477656957373344	0.148912744
+
+[ moleculetype ]
+UNK	         3
+
+[ atoms ]
+;index, atom type, resnum, resname, name, cgnr, charge, mass
+     1 UNK_0        1 UNK      C          1     -0.164865178987     12.010780000000
+     2 UNK_1        1 UNK      C          1      0.053115122020     12.010780000000
+     3 UNK_2        1 UNK      Cl         1     -0.275725787506     35.453200000000
+     4 UNK_3        1 UNK      H          1      0.102372590452      1.007947000000
+     5 UNK_4        1 UNK      H          1      0.102372590452      1.007947000000
+     6 UNK_5        1 UNK      H          1      0.121852595359      1.007947000000
+     7 UNK_6        1 UNK      EP1        1      0.060878068209      0.000000000000
+
+[ pairs ]
+;ai    aj   funct
+     3	     4	     1
+     5	     6	     1
+     3	     5	     1
+     4	     6	     1
+
+[ bonds ]
+;ai    aj   funct r k
+     1      2      1      0.137305835687  377677.921541456657 
+     1      4      1      0.108598333613  323337.248450794665 
+     1      5      1      0.108598333613  323337.248450794665 
+     2      3      1      0.174930677746  153075.163583758345 
+     2      6      1      0.108598333613  323337.248450794665 
+
+[ angles ]
+;ai    aj   ak   funct theta  k
+     1      2      3      1     119.123043227200     689.839968758455 
+     1      2      6      1     119.841370413700     274.750139966331 
+     2      1      4      1     119.841370413700     274.750139966331 
+     2      1      5      1     119.841370413700     274.750139966331 
+     3      2      6      1     119.841370413700     274.750139966331 
+     4      1      5      1     117.693446791300     181.534935729444 
+
+[ dihedrals ]
+;ai    aj   ak   al   funct phi  k
+     3     2     1     4     1    180.000000000000     21.861963841467                 2
+     3     2     1     5     1    180.000000000000     21.861963841467                 2
+     4     1     2     6     1    180.000000000000     21.861963841467                 2
+     5     1     2     6     1    180.000000000000     21.861963841467                 2
+     1     5     2     4     4    180.000000000000      6.441434954777                 2
+     2     3     6     1     4    180.000000000000      6.441434954777                 2
+     2     6     1     3     4    180.000000000000      6.441434954777                 2
+     1     4     5     2     4    180.000000000000      6.441434954777                 2
+     1     2     4     5     4    180.000000000000      6.441434954777                 2
+     2     1     3     6     4    180.000000000000      6.441434954777                 2
+
+[ settles ]
+;i  funct   dOH  dHH
+
+[ virtual_sites2 ]
+; parent, orientation atoms, func, a
+7	3	2	1	-0.8292998260234572	
+
+[ exclusions ]
+;ai    aj
+     7     3     2
+     3     7
+     2     7
+
+[ moleculetype ]
+HOH	         3
+
+[ atoms ]
+;index, atom type, resnum, resname, name, cgnr, charge, mass
+     1 HOH_0        2 HOH      O          1     -0.834000000000     15.999430000000
+     2 HOH_1        2 HOH      H          1      0.417000000000      1.007947000000
+     3 HOH_2        2 HOH      H          1      0.417000000000      1.007947000000
+
+[ pairs ]
+;ai    aj   funct
+
+[ bonds ]
+;ai    aj   funct r k
+
+[ angles ]
+;ai    aj   ak   funct theta  k
+
+[ dihedrals ]
+;ai    aj   ak   al   funct phi  k
+
+[ settles ]
+;i  funct   dOH  dHH
+     1	     1	      0.095720000000	      0.151390065452
+
+
+[ exclusions ]
+;ai    aj
+     1     2     3
+     2     1     3
+     3     1     2
+
+[ moleculetype ]
+NA	         3
+
+[ atoms ]
+;index, atom type, resnum, resname, name, cgnr, charge, mass
+     1 NA_0      1097 NA       Na         1      1.000000000000     22.989769282000
+
+[ pairs ]
+;ai    aj   funct
+
+[ bonds ]
+;ai    aj   funct r k
+
+[ angles ]
+;ai    aj   ak   funct theta  k
+
+[ dihedrals ]
+;ai    aj   ak   al   funct phi  k
+
+[ settles ]
+;i  funct   dOH  dHH
+
+
+[ exclusions ]
+;ai    aj
+
+[ moleculetype ]
+CL	         3
+
+[ atoms ]
+;index, atom type, resnum, resname, name, cgnr, charge, mass
+     1 CL_0      1099 CL       Cl         1     -1.000000000000     35.453200000000
+
+[ pairs ]
+;ai    aj   funct
+
+[ bonds ]
+;ai    aj   funct r k
+
+[ angles ]
+;ai    aj   ak   funct theta  k
+
+[ dihedrals ]
+;ai    aj   ak   al   funct phi  k
+
+[ settles ]
+;i  funct   dOH  dHH
+
+
+[ exclusions ]
+;ai    aj
+
+
+[ system ]
+;name
+FOO
+
+[ molecules ]
+;name	number
+UNK	1
+HOH	1095
+NA	2
+CL	2
+
